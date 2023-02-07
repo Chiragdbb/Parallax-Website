@@ -120,13 +120,13 @@ padding:5rem;
 /* images */
 
 .bg-img1 {
-    background-image: url('/Mini-project-3/assets/sport-1.jpg');
+    background-image: url('assets/sport-1.jpg');
 }
 
 .bg-img2 {
-    background-image: url('/Mini-project-3/assets/sport-2.jpg');
+    background-image: url('assets/sport-2.jpg');
 }
 
 .bg-img3 {
-    background-image: url('/Mini-project-3/assets/sport-3.jpg');
+    background-image: url('assets/sport-3.jpg');
 }
