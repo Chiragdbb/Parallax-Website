@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 11px;
+    /* overflow-y: auto; */
+}
+
+/* hero section */
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.foreground,
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* image is far away */
+
+.background {
+    transform: translateZ(-35px) scale(5);
+}
+
+/* image is near than [far away image] background */
+
+.foreground {
+    transform: translateZ(-20px) scale(3);
+}
+
+/* hero heading */
+
+.container h1 {
+    position: absolute;
+    color: white;
+    font-size: 10rem;
+    text-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    transform: translateY(-70%);
+    text-transform: uppercase;
+}
+
+/* blocks container */
+
+.block{
+    background-color: #2d2d2d;
+}
+
+/* blocks */
+
+.block1{
+background-color: #2d2d2d;
+width: 100vw;
+height: 100vh;
+padding:5rem;
+}
+
+.block1 h2 {
+    color: white;
+    font-size: 5rem;
+}
+
+.block2, .block3, .block4 {
+    height: 80vh;
+    padding: 3rem;
+}
+
+.repeat-paras {
+    font-size: 1.5rem;
+    color: white;
+    padding: 2rem 0;
+}
+
+
+.repeat-headings {
+    width: 100%;
+    height: 70%;
+    background-color:transparent;
+    position: relative;
+}
+
+.repeat-headings h2{
+    color:black;
+    background-color: white;
+    display: inline-block;
+    font-size: 4rem;
+    text-transform:uppercase ;
+    position: absolute;
+    left:40%;
+    top: 50%;
+}
+
+/* fixed background image */
+
+.bg {
+    width: 100%;
+    height: 600px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* images */
+
+.bg-img1 {
+    background-image: url('/Mini-project-3/assets/sport-1.jpg');
+}
+
+.bg-img2 {
+    background-image: url('/Mini-project-3/assets/sport-2.jpg');
+}
+
+.bg-img3 {
+    background-image: url('/Mini-project-3/assets/sport-3.jpg');
+}
